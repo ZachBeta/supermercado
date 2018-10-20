@@ -1,0 +1,8 @@
+version: '3'
+services:
+  miner:
+    build: './miner'
+    volumes:
+      - './miner:/usr/src/'
+    logging:
+        driver: 'json-file'
