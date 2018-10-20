@@ -2,20 +2,20 @@ Goal:
 Build a cryptocurrency market simulation to use in training ML to trade and play the market
 
 # V1
-Implement a cryptocurrency blockchain - AlphaCoin
-Full Ledger is JSON body of each block
-One miner takes current ledger and credits itself with 1000 coins (1 k coin)
-Use hostname as ledger account name
+[x] Implement a cryptocurrency blockchain - AlphaCoin
+[x] Full Ledger is JSON body of each block
+[x] One miner takes current ledger and credits itself with 1000 coins (1 k coin)
+[x] Use hostname as ledger account name
 
 # One Chain File to Rule Them All
-Implement dockerized miners that all compete for longest chain and share that chain amongst each other (shared file determines chain, use a seed)
-Manually tuned difficulty to ~1 minute for 3 miners
-Look at file timestamp to see if chain changed before claiming block
-Claim lock, Write chain, Unlock chain
+[x] Implement dockerized miners that all compete for longest chain and share that chain amongst each other (shared file determines chain, use a seed)
+[x] Manually tuned difficulty to ~1 minute for 3 miners
+[x] Look at file timestamp to see if chain changed before claiming block
+[x] Claim lock, Write chain, Unlock chain
 
 # Hard Fork Time!
-Introduce 2 other chains using exact same code (BravoCoin, CharlieCoin)
-Allow an agent to mine multiple chains (miner looks at current balance and mines its most preferred chain - balancer - go for lowest balance)
+[x] Introduce 2 other chains using exact same code (BravoCoin, CharlieCoin)
+[x] Allow an agent to mine multiple chains (miner looks at current balance and mines its most preferred chain - balancer - go for lowest balance)
 
 # Basic Balancing Trading and Provisional “Clearing House”
 Each Miner now has a Trader that works on its behalf
