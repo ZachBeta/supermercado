@@ -6,4 +6,4 @@ WORKDIR /usr/src/
 # RUN gem install bundler
 # COPY Gemfile* /usr/src/
 # RUN bundle install
-CMD ["ruby", "lib/work.rb"]
+CMD ["ruby", "-Ilib", "lib/work.rb"]
